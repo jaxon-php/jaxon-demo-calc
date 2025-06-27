@@ -12,7 +12,7 @@ return [
     'views' => [
         'jaxon::demo::calc' => [
             'directory' => realpath(__DIR__ . '/../templates'),
-            'extension' => '',
+            'extension' => '.php',
             'renderer' => 'jaxon',
         ],
     ],

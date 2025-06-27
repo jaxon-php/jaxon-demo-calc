@@ -9,6 +9,6 @@ class Calc extends NodeComponent
 {
     public function html(): Stringable
     {
-        return $this->view()->render('jaxon::demo::calc::wrapper');
+        return $this->view()->render('jaxon::demo::calc::calc');
     }
 }

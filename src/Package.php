@@ -2,11 +2,9 @@
 
 namespace Jaxon\Demo\Calc;
 
-use Jaxon\Demo\Calc\App\Calc;
 use Jaxon\Plugin\AbstractPackage;
 
 use function realpath;
-use function Jaxon\cl;
 
 /**
  * Calc package
@@ -26,6 +24,6 @@ class Package extends AbstractPackage
      */
     public function getHtml(): string
     {
-        return cl(Calc::class)->html();
+        return '' . $this->view()->render('jaxon::demo::calc::wrapper');
     }
 }
