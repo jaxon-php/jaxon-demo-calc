@@ -11,16 +11,16 @@ $operandB = je('operand-b')->rd()->input();
 ?>
 <form>
     <div class="row mb-3">
-        <div class="col-md-4">
+        <div class="col-5">
             <button type="button" class="btn btn-primary w-100"
                 <?= attr()->click($rqCalc->render()) ?>>Clear</button>
         </div>
-        <div class="col-md-8">
+        <div class="col-7">
             <input type="text" class="form-control" id="operand-a" />
         </div>
     </div>
     <div class="row mb-3">
-        <div class="col-md-4">
+        <div class="col-5">
             <select class="form-select" id="operator">
                 <option value="addition">+</option>
                 <option value="subtraction">-</option>
@@ -28,16 +28,16 @@ $operandB = je('operand-b')->rd()->input();
                 <option value="division">/</option>
             </select>
         </div>
-        <div class="col-md-8">
+        <div class="col-7">
             <input type="text" class="form-control" id="operand-b" />
         </div>
     </div>
     <div class="row mb-3">
-        <div class="col-md-4">
+        <div class="col-5">
             <button type="button" class="btn btn-primary w-100"
                 <?= attr()->click($rqCalcFunc->calculate($operator, $operandA, $operandB)) ?>>=</button>
         </div>
-        <div class="col-md-8" <?= attr()->bind($rqResult) ?>>
+        <div class="col-7" <?= attr()->bind($rqResult) ?>>
         </div>
     </div>
 </form>
